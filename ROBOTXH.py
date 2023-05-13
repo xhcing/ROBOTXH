@@ -1,10 +1,3 @@
-echo "# ROBOTXH" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/xhcing/ROBOTXH.git
-git push -u origin main
 from flask import Flask, request, abort
 from linebot import LineBotApi, WebhookHandler
 from linebot.exceptions import InvalidSignatureError
@@ -37,6 +30,3 @@ import os
 if __name__ == "__main__":
     port = int(os.environ.get('PORT', 5000))
     app.run(host='0.0.0.0', port=port)
-    heroku create myapp --buildpack https://github.com/some/buildpack.
-    heroku buildpacks:clear
-heroku buildpacks:clear
