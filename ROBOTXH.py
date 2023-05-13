@@ -149,3 +149,4 @@ def reply_location(text):
 if __name__ == "__main__":
     run_with_ngrok(app)         # colab 使用，本機環境請刪除
     app.run()
+heroku create myapp --buildpack https://github.com/some/buildpack.git
