@@ -27,12 +27,6 @@ def linebot():
 if __name__ == "__main__":
     run_with_ngrok(app)
     app.run()
-from flask_ngrok import run_with_ngrok          # colab 使用，本機環境請刪除
-from flask import Flask, request
-from linebot import LineBotApi, WebhookHandler
-from linebot.models import StickerSendMessage   # 載入 StickerSendMessage 模組
-import json
-
 app = Flask(__name__)
 
 @app.route("/", methods=['POST'])
@@ -57,12 +51,6 @@ def linebot():
 if __name__ == "__main__":
     run_with_ngrok(app)
     app.run()
-    from flask_ngrok import run_with_ngrok                          # colab 使用，本機環境請刪除
-from flask import Flask, request
-from linebot import LineBotApi, WebhookHandler
-from linebot.models import TextSendMessage, ImageSendMessage    # 載入 TextSendMessage 和 ImageSendMessage 模組
-import json
-
 app = Flask(__name__)
 
 @app.route("/", methods=['POST'])
@@ -105,11 +93,6 @@ def reply_img(text):
 if __name__ == "__main__":
     run_with_ngrok(app)
     app.run()
-    from flask_ngrok import run_with_ngrok                             # colab 使用，本機環境請刪除
-from flask import Flask, request
-from linebot import LineBotApi, WebhookHandler
-from linebot.models import TextSendMessage, LocationSendMessage    # 載入 TextSendMessage 和 LocationSendMessage 模組
-import json
 
 app = Flask(__name__)
 
